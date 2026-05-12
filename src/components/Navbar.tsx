@@ -6,6 +6,7 @@ import Button from "./ui/Button";
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#how-it-works", label: "How it works" },
+  { href: "#automation", label: "Automation" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ];

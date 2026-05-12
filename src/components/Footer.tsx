@@ -41,11 +41,12 @@ export default function Footer() {
 
       <div className="border-t border-navy-100">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-3 px-6 py-6 text-xs text-navy-500 md:flex-row md:items-center">
-          <p>
+          <p className="max-w-2xl leading-relaxed">
             Demo project built to showcase a website + automation lead
-            generation system.
+            generation system. Testimonials and clinic details are fictional
+            for demonstration purposes.
           </p>
-          <p>© {new Date().getFullYear()} {CLINIC.name} · All rights reserved.</p>
+          <p className="shrink-0">© {new Date().getFullYear()} {CLINIC.name} · Portfolio demo</p>
         </div>
       </div>
     </footer>

@@ -13,22 +13,22 @@ const QUICK_REPLIES: { label: string; reply: string }[] = [
   {
     label: "Book appointment",
     reply:
-      "Great — the fastest way is to use the form just below the testimonials. Drop your name, phone, and a preferred time and the front desk will confirm within one business day.",
+      "Happy to help you book. I just need a few quick details — your name, phone number, and a preferred time. Scroll down to the booking form and the front desk will confirm your slot within one business day.",
   },
   {
     label: "Ask about pricing",
     reply:
-      "Cleanings start at $89 and whitening packages start at $299. For implants and cosmetic work we'll send a personalized quote after a free 15-minute consult.",
+      "Pricing depends on the specific treatment and what the dentist recommends after a quick consultation. If you share your contact details through the form, the clinic will follow up with a personalized quote.",
   },
   {
     label: "Emergency visit",
     reply:
-      "If this is urgent, please call (555) 010-2040 directly — we reserve same-day slots for pain, swelling, or trauma. Otherwise, fill out the form with 'Emergency' in the message.",
+      "Urgent cases are always prioritized — same-day slots are reserved for pain, swelling, or trauma. Please submit your details through the booking form (mention 'Emergency' in the message) and the front desk will reach out immediately.",
   },
   {
     label: "Teeth whitening",
     reply:
-      "Our in-office whitening takes about an hour and most patients see 4–6 shades of improvement in a single visit. Want me to point you to the booking form?",
+      "Our in-office whitening usually takes about an hour and most patients see a visible improvement after a single session. Want me to send you to the booking form to request a consultation?",
   },
 ];
 

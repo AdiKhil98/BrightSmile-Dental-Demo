@@ -127,19 +127,40 @@ export default function LeadForm() {
                   <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-50 text-brand-600">
                     <CheckCircle2 size={26} />
                   </span>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-xl font-bold text-navy-900">
-                      Thanks — we've got your request.
+                      Thank you! Your request has been received.
                     </h3>
                     <p className="mt-2 text-sm leading-relaxed text-navy-500">
-                      A team member will follow up within one business day.
-                      You'll also receive a confirmation email shortly.
+                      In a live setup, this lead would now be sent to Google
+                      Sheets, your CRM, an email notification, and the
+                      follow-up automation sequence — all triggered from a
+                      single submission.
                     </p>
+
+                    <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                      {[
+                        "Google Sheets row",
+                        "CRM contact + deal",
+                        "Email / WhatsApp alert",
+                        "Follow-up sequence",
+                      ].map((label) => (
+                        <div
+                          key={label}
+                          className="flex items-center gap-2 rounded-lg bg-slate-50 px-3 py-2 text-xs text-navy-700 ring-1 ring-navy-100"
+                        >
+                          <CheckCircle2 size={14} className="text-brand-500" />
+                          <span>{label}</span>
+                        </div>
+                      ))}
+                    </div>
+
                     {submitState.mode === "demo" && (
-                      <p className="mt-3 rounded-lg bg-slate-50 px-3 py-2 text-xs text-navy-500 ring-1 ring-navy-100">
+                      <p className="mt-4 rounded-lg bg-slate-50 px-3 py-2 text-xs text-navy-500 ring-1 ring-navy-100">
                         <strong className="text-navy-900">Demo mode:</strong>{" "}
-                        no webhook is configured, so the payload was logged to
-                        the browser console instead of being delivered.
+                        no webhook is configured, so the JSON payload was
+                        logged to the browser console instead of being
+                        delivered to the automation pipeline.
                       </p>
                     )}
                     <button
