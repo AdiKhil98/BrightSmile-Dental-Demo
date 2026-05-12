@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-navy-700 font-sans antialiased;
+}
+
+/* Subtle gradient utility used by the hero */
+.bg-hero-gradient {
+  background:
+    radial-gradient(1200px 600px at 90% -10%, rgba(20, 184, 166, 0.18), transparent 60%),
+    radial-gradient(800px 500px at -10% 10%, rgba(11, 18, 32, 0.06), transparent 60%),
+    #ffffff;
+}
